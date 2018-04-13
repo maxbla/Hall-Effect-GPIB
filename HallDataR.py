@@ -212,7 +212,7 @@ class HallDataR:
         self.lockin1.write("SENS 26")
         
         self.dmm.write("*RST")
-        self.dmm.write("CONF:VOLT:AC")
+        self.dmm.write("CONF:VOLT:DC")
 
         self.mag_ctrl.write("CONF:CURR:MAX 72")
         self.mag_ctrl.write("CONF:COIL "+ self.coil_constant)
